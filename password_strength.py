@@ -28,4 +28,4 @@ def get_password_strength(password, filepath_to_list):
 if __name__ == '__main__':
     password = input('Enter your password to get strength: ')
     filepath_to_blacklist = input('Enter filepath to blacklist:')
-    print('Your password is ' + str(get_password_strength(password,filepath_to_blacklist)) + '/10')
+    print('{} {}'.format('Your password is', str(get_password_strength(password,filepath_to_blacklist)) + '/10'))

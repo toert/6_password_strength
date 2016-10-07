@@ -9,7 +9,6 @@ def load_password_blacklist(filepath):
 
 def get_password_strength(password):
     if len(password) < 6:
-        print('Too short password!')
         return int(1)
     else:
         filepath_to_blacklist = input('Enter filepath to blacklist:')

@@ -4,12 +4,12 @@ import re
 def load_password_blacklist(filepath):
     with open(filepath, 'r') as data:
         data_bad_passwords = data.read()
-        list_of_bad_passwords = re.findall(r'[\w]+', data_bad_passwords)
-        return list_of_bad_passwords
+    list_of_bad_passwords = re.findall(r'[\w]+', data_bad_passwords)
+    return list_of_bad_passwords
 
 def get_password_strength(password):
     if len(password) < 6:
-        return int(1)
+        return 1
     else:
         filepath_to_blacklist = input('Enter filepath to blacklist:')
         password_strength = 1

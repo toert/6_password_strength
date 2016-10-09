@@ -1,4 +1,3 @@
 # 6_password_strength
-Cкрипт позволяет проверить сложность пароля.
-
-При запуске скрипт попросит ввести в консоль пароль и путь до файла с неподходящими паролями (blacklist), а в ответ выдаст информацию о его сложности.
+The script helps you to check strenght of your password.
+It gets your password and the filepath to a blacklist and print strength of your password(from 1 to 10)
